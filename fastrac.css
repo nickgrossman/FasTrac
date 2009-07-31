@@ -1,0 +1,92 @@
+html {
+  padding:0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Layout */
+#sourcelist {
+  width: 200px;
+  float: left;
+  background: #d4dde6;  
+  padding: 0px;
+}
+#content {
+  float: left;
+  background: #a6acb8;
+  padding: 10px 20px;
+}
+
+/* Source list */
+#sourcelist h2 {
+  margin: 10px 10px 0;
+  padding: 0;
+}
+#sourcelist ul {
+  padding: 3px 0;
+  margin: 0 0 12px;
+}
+#sourcelist li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+#sourcelist li a {
+  display: block;
+  padding: 3px 6px 3px 18px;
+}
+#sourcelist li a.selected {
+  background: #7396dc;
+  color: #000;
+  font-weight: bold;
+}
+#sourcelist li a.target {
+  background: #d86c6e;
+  color: #fff;
+}
+
+/* Items panel */
+#groupby {
+  text-align: right;
+}
+#tickets ul {
+  padding: 0;
+  margin: 0;
+}
+#tickets li {
+  display: block;
+  margin: 0 0 1px;
+  padding: 6px 12px;
+  background: #fafafa;
+  color: #111;
+}
+#tickets li input  {
+  margin-right: 6px;
+}
+#tickets li a {
+  border: none;
+  padding: 0;
+}
+
+/* Toolbar */
+#toolbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Generic Items */
+.meta {
+  color: #999;
+}
+
+hr {
+  clear: both;
+  visibility: hidden;
+}
+
+#admin {
+  /*display: none;*/
+}

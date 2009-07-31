@@ -1,0 +1,5 @@
+AuthUserFile /Users/nick/Sites/sandbox/theboard/.htpasswd
+AuthType Basic
+AuthName "The Board"
+Require valid-user
+
