@@ -15,8 +15,8 @@ function display_items() {
   <ul>
   <?php foreach ($items as $key => $item) : ?>
     <li id="ticket-10<?php echo $key; ?>" ft:ticket-id="10<?php echo $key; ?>">
-      <input type="checkbox" />
-      <a href=""><?php echo $item; ?></a>
+      <?php echo $item; ?>
+      <a href="https://projects.openplans.org/GeoTrac/ticket/85" target="_blank" class="ticket-link"  title="Link to ticket">#</a>
     </li>
   <?php endforeach; ?>
   </ul>

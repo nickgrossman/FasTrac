@@ -62,6 +62,17 @@ body {
   padding: 6px 12px;
   background: #fafafa;
   color: #111;
+  cursor: default;
+}
+#tickets li.hover {
+  background: #eee;
+}
+#tickets li.beingdragged {
+  background: #ffffcc;
+  filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
 }
 #tickets li input  {
   margin-right: 6px;
@@ -69,6 +80,10 @@ body {
 #tickets li a {
   border: none;
   padding: 0;
+}
+
+#tickets li a.ticket-link {
+  margin-left: 15px;
 }
 
 /* Toolbar */

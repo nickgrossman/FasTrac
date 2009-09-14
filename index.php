@@ -3,8 +3,6 @@
 #
 # Load up files
 #
-require_once('config.php');
-require_once('setup.php');
 require_once('functions.php'); 
 
 
@@ -21,10 +19,6 @@ if ($_GET['action'] == 'display_items') {
   require_once('display.php');
 }
 
-
-
-/* close MySQL connection */
-mysql_close();
 
 
 

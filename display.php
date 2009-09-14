@@ -35,7 +35,7 @@ require_once('display.inc.php');
     </select>
   </div>
   <div id="tickets">
-    <?php /* display_items(); */?>
+    <?php display_items(); ?>
   </div>
   
 </div>

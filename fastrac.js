@@ -16,10 +16,20 @@ function applyBehaviors() {
   $("#tickets li input").click(function(event) {
 		  $(this.parentNode).toggleClass('grouped');
 	});
+	
+	$("#tickets li").hover(
+	 function(event) {
+	   $(this).addClass('hover');
+	 },
+	 function(event) {
+	   $(this).removeClass('hover');
+	 }
+	);
   
   $("#tickets li").draggable({
   revert: 'invalid',
   start: function(event, ui) {
+      $(this).addClass('beingdragged');
 			posTopArray = [];
 			posLeftArray = [];
 			if ($(this).hasClass("grouped")) {		// Loop through each element and store beginning start and left positions
@@ -48,6 +58,9 @@ function applyBehaviors() {
 					$(this).css('left', posLeftArray[i] + leftdiff); // Move element horizontally - current css left + distance dragged element has travelled horizontally
 				});
 			}
+		},
+		stop: function (event, ui) {
+      $(this).removeClass('beingdragged');
 		}
   });
 
